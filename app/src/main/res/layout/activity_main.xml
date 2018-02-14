@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgapp"
+    tools:context="com.example.realxiz.apptemperature.MainActivity">
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:hint="Please Enter Number . . . ."
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:padding="20dp"
+        android:inputType="numberDecimal"
+
+        />
+    <Button
+
+        android:id="@+id/btC2F"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        app:layout_constraintTop_toBottomOf="@+id/edt1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="50dp"
+        android:text="C => F"
+        android:shadowColor="#fff"
+        android:onClick="C2F"
+
+
+        />
+
+    <Button
+
+        android:id="@+id/btF2C"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/edt1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="50dp"
+        android:text="F => C"
+        android:onClick="F2C"
+
+
+
+        />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celsius to Fahrenheit"
+        android:fontFamily="casual"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/btC2F"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="40dp"
+
+        />
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fahrenheit to Celsius"
+        android:fontFamily="casual"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btF2C"
+        android:layout_margin="40dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/pic1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        android:src="@drawable/thermometer"
+        android:foregroundGravity="center"
+        android:layout_margin="50dp"
+        />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/pic1"
+        android:text="Answer  . . . .  "
+        android:fontFamily="casual"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:layout_margin="40dp"
+        />
+</android.support.constraint.ConstraintLayout>
